@@ -268,10 +268,11 @@ press space while loading.</p>
 <h3>
 <a id="bootloaderentriesarchconf" class="anchor" href="#bootloaderentriesarchconf" aria-hidden="true"><span class="octicon octicon-link"></span></a>/boot/loader/entries/arch.conf</h3>
 
-<p>title Arch Linux
-   linux /vmlinuz-linux
-   initrd /initramfs-linux.img
-   options cryptdevice=/dev/sdX:root:header root=/dev/mapper/root rootflags=subvol=__active rw
+<pre><code>title Arch Linux
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options cryptdevice=/dev/sdX:root:header root=/dev/mapper/root rootflags=subvol=__active rw
+</code></pre>
 Add <code>,allow-discards</code> after header option if you decided to go with TRIM/discard support. </p>
 
 <p>Hope that it works. It is time to try!</p>
